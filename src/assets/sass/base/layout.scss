@@ -1,4 +1,10 @@
-
+.wrapper{
+	display: flex;
+	padding: 0 50px;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-family: $font-family-base;
+}
 
 
 ul,

@@ -1,0 +1,189 @@
+.category{
+	display: flex;
+	width: 100%;
+	&__list{
+		display: flex;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__link{
+		position: relative;
+		display: flex;
+		width: 170px;
+		height: 30px;
+		border: 2px solid $danger;
+		border-radius: 2rem;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+		padding:0 30px;
+		line-height: 0.9;
+		background: $white;
+		font-size: 0.625rem;
+		overflow: hidden;
+
+		&:before{
+			content: "";
+			position: absolute;
+			left: 10px;
+			top: 0;
+			height: 25px;
+			width: 25px;
+			background: url("../i/sprites/category-sprite.png") no-repeat;
+			background-position: 0 0;
+		}
+		&:hover{
+			cursor: pointer;
+			text-decoration: none;
+			background: $danger;
+			color: $white;
+			&:before{
+				background-color: $danger ;
+				background-position: 0 -40px;
+			}
+		}
+	}
+	&__link-2{
+		&:before{ background-position: -39px -1px;}
+		&:hover:before { background-position: -39px -41px;}
+	}
+	&__link-3 {
+		&:before { background-position: -79px -3px; }
+		&:hover:before { background-position: -79px -43px;}
+	}
+	&__link-4 {
+		&:before { background-position: -119px -3px;}
+		&:hover:before { background-position: -119px -43px;}
+	}
+	&__link-5 {
+		&:before { background-position: -159px -3px;}
+		&:hover:before { background-position: -159px -43px;}
+	}
+	&__link-6 {
+		&:before { background-position: -200px -2px;}
+		&:hover:before { background-position: -200px -42px;}
+	}
+	&__link-7 {
+		&:before { background-position: -240px -3px;}
+		&:hover:before { background-position: -240px -43px;}
+	}
+	&__link-8 {
+		&:before { background-position: 0 -83px;}
+		&:hover:before { background-position: 0 -123px;}
+	}
+	&__link-9 {
+		&:before { background-position: -40px -83px;}
+		&:hover:before { background-position: -40px -123px;}
+	}
+	&__link-10 {
+		&:before { background-position: -80px -81px;}
+		&:hover:before { background-position: -80px -121px;}
+	}
+	&__link-11 {
+		&:before { background-position: -160px -83px;}
+		&:hover:before { background-position: -160px -123px;}
+	}
+	&__link-12 {
+		&:before { background-position: -120px -83px;}
+		&:hover:before { background-position: -120px -123px;}
+	}
+	&__link-13 {
+		&:before { background-position: -200px -80px;}
+		&:hover:before { background-position: -200px -120px;}
+	}
+	&__link-14 {
+		&:before { background-position: -240px -83px;}
+		&:hover:before { background-position: -240px -123px;}
+	}
+	&__link-15 {
+		&:before { background-position: 0 -163px;}
+		&:hover:before { background-position: 0 -203px;}
+	}
+	&__link-16 {
+		&:before { background-position: -40px -163px;}
+		&:hover:before { background-position: -40px -203px;}
+	}
+	&__link-17 {
+		&:before { background-position: -80px -163px;}
+		&:hover:before { background-position: -80px -203px;}
+	}
+	&__link-18 {
+		&:before { background-position: -120px -167px;}
+		&:hover:before { background-position: -120px -207px;}
+	}
+	&__link-19 {
+		&:before { background-position: -160px -164px;}
+		&:hover:before { background-position: -160px -204px;}
+	}
+	&__link-20 {
+		&:before { background-position: -200px -165px;}
+		&:hover:before { background-position: -200px -205px;}
+	}
+	&__link-21 {
+		&:before { background-position: -240px -161px;}
+		&:hover:before { background-position: -240px -201px;}
+	}
+	&__link-22 {
+		&:before { background-position: 0 -243px;}
+		&:hover:before { background-position: 0 -283px;}
+	}
+	&__link-23 {
+		&:before { background-position: -40px -243px;}
+		&:hover:before { background-position: -40px -283px;}
+	}
+	&__link-24 {
+		&:before { background-position: -80px -242px;}
+		&:hover:before { background-position: -80px -282px;}
+	}
+	&__link-25 {
+		&:before { background-position: -120px -242px;}
+		&:hover:before { background-position: -120px -282px;}
+	}
+	&__link-26 {
+		&:before { background-position: -160px -243px;}
+		&:hover:before { background-position: -160px -283px;}
+	}
+	&__link-27 {
+		&:before { background-position: -200px -243px;}
+		&:hover:before { background-position: -200px -283px;}
+	}
+	&__link-28 {
+		&:before { background-position: -240px -244px;}
+		&:hover:before { background-position: -240px -284px;}
+	}
+	&__link-29 {
+		&:before { background-position: 0 -321px;}
+		&:hover:before { background-position: 0 -361px;}
+	}
+	&__link-30 {
+		&:before { background-position: -40px -325px;}
+		&:hover:before { background-position: -40px -365px;}
+	}
+	&__link-31 {
+		&:before { background-position: -80px -322px;}
+		&:hover:before { background-position: -80px -362px;}
+	}
+	&__link-32 {
+		&:before { background-position: -120px -322px;}
+		&:hover:before { background-position: -120px -362px;}
+	}
+	&__link-33 {
+		&:before { background-position: -160px -323px;}
+		&:hover:before { background-position: -160px -363px;}
+	}
+	&__link-34 {
+		&:before { background-position: -200px -324px;}
+		&:hover:before { background-position: -200px -364px;}
+	}
+	&__link-35 {
+		&:before { background-position: -240px -321px;}
+		&:hover:before { background-position: -240px -361px;}
+	}
+}

@@ -12,6 +12,7 @@ $dark: #272727;
 $green: #a1b868;
 $teal: #74b593;
 $cyan:    #17a2b8;
+$gray: #a1a1a1;
 
 $white: #fff;
 $gray-50: #f7f7f7;
@@ -104,7 +105,7 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   #f4f4f4 ;
+$body-bg:                   $white ;
 $body-color:                $black ;
 
 
@@ -135,18 +136,9 @@ $font-size-sm:                ($font-size-base * .875);
 $display4-size: 2.25rem;
 
 //button global styles
-$border-radius-none: 					none;
-$btn-border-radius:           $border-radius-none;
+$btn-border-radius:           1.5rem;
+$btn-transition: all .15s ease-in-out;
+// Forms
 
-
-//// Grid containers
-////
-//// Define the maximum width of `.container` for different screen sizes.
-//$container-max-widths: (
-//				sm: 540px,
-//				md: 720px,
-//				lg: 960px,
-//				xl: 80%
-//);
-//
-//@include _assert-ascending($container-max-widths, "$container-max-widths");
+$input-border-radius:         1.5rem;
+$input-border-color:					$gray;
