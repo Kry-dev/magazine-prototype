@@ -5,6 +5,7 @@
 	min-height: 530px;
 	background: url("../i/banner/banner-bg-01.png") no-repeat center 0;
 	padding: 0 50px;
+	overflow: hidden;
 	&:after{
 		content: "";
 		position: absolute;

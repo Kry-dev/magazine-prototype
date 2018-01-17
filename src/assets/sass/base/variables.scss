@@ -12,7 +12,7 @@ $dark: #272727;
 $green: #a1b868;
 $teal: #74b593;
 $cyan:    #17a2b8;
-$gray: #a1a1a1;
+$gray: #323232;
 
 $white: #fff;
 $gray-50: #f7f7f7;
@@ -45,12 +45,12 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue;
+$primary:       $red;
 $secondary:     $gray-600;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
-$danger:        $red;
+$danger:        $primary;
 $light:         $gray-100;
 $dark:          $gray-800;
 $rosewood:      $purple;
@@ -142,3 +142,22 @@ $btn-transition: all .15s ease-in-out;
 
 $input-border-radius:         1.5rem;
 $input-border-color:					$gray;
+
+//Titles
+
+//title underline
+.underline {
+	position: relative;
+	&:after {
+		position: absolute;
+		left: 50%;
+		bottom: -10px;
+		transform: translateX(-50%);
+		display: block;
+		content: "";
+		width: 30%;
+		margin: 0 auto;
+		height: 3px;
+		background-color: $primary;
+	}
+}
