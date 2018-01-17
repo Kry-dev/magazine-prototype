@@ -1,4 +1,7 @@
 @mixin animation-scale {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transition: transform .3s ease-in-out;
+}
+@mixin animation-base {
+	transition: all.3s ease-in-out;
 }

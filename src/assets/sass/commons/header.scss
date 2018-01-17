@@ -1,8 +1,6 @@
 .navbar {
 	display: flex;
-	//flex-direction: row;
-	//justify-content: space-between;
-	//align-items: center;
+	padding: 0 50px;
 	&-brand {
 		display: flex;
 		width: 150px;
@@ -31,7 +29,8 @@
 				-moz-outline-radius: 1.5rem;
 			}
 		}
-		.btn{
+		.btn {
+			padding: 0;
 			position: absolute;
 			right: 5px;
 			top: 5px;
@@ -49,6 +48,7 @@
 		.fa{
 			color: $danger;
 			font-size: 2.25rem;
+			padding: 0;
 		}
 	}
 }

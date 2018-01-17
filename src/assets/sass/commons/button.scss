@@ -1,6 +1,9 @@
 button,
-.btn{
+.btn {
 	transform: scale(1);
+	text-transform: uppercase;
+	font-size: 1.315rem;
+	font-family: 'Montserrat-SemiBold';
 	&:hover,
 	&:active,
 	&:focus{
@@ -17,4 +20,27 @@ button,
 	align-items: center;
 	width: 30px;
 	height: 30px;
+	font-size: 1rem;
+	padding: 0;
+}
+.btn-arr-right{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	&:after{
+		display: block;
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 17px;
+		right: 40px;
+		top: 20px;
+		background: url(../i/icons/arrow-right.png) no-repeat 0 0;
+	}
+	&:hover:after{
+		@include animation-base;
+		right: 20px;
+	}
 }
