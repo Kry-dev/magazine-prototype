@@ -38,7 +38,8 @@
 		display: flex;
 		width: 100%;
 		flex-direction: row;
-		padding-bottom: 200px;
+		padding-bottom: 220px;
+		position: relative;
 		&.flex-row-reverse{
 			.HowItWorks__article_img{
 				justify-content: flex-end;
@@ -47,9 +48,30 @@
 				}
 			}
 		}
+		&:after {
+			content: "";
+			display: flex;
+			position: absolute;
+			bottom: 20px;
+			//left: 50%;
+
+			width: 100%;
+			transform: scale(1, -1);
+			height: 220px;
+			background: url("../i/curves/curve-01.png") no-repeat center;
+
+		}
+		&:nth-child(2):after{
+			background: url("../i/curves/curve-01.png") no-repeat center;
+			transform: scale(1,1);
+		}
 		&:last-child{
 			padding-bottom: 20px;
+			&:after{
+				display: none;
+			}
 		}
+
 	}
 
 	h2 {

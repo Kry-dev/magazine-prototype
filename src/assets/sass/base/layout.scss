@@ -55,7 +55,15 @@ strong{
 	opacity: .8;
 	text-align: center;
 }
-
+.topSection {
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: -53px;
+	padding-top: 53px;
+}
 section{
 	.section_header{
 		display: flex;
