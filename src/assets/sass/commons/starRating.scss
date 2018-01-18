@@ -1,0 +1,64 @@
+.rating {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	position: relative;
+	width: 85px;
+	height: 17px;
+	list-style: none;
+	background: url('../i/sprites/star-rating.png');
+
+ li {
+		height: 17px;
+
+		&.current {
+			z-index: 1;
+			background: url('../i/sprites/star-rating.png') left bottom;
+		}
+	 span[class*="star"] {
+			position: absolute;
+			z-index: 5;
+			display: block;
+			width: 17px;
+			height: 17px;
+			cursor: pointer;
+	 }
+	 span[class*="star"]:hover {
+			left: 0;
+			z-index: 2;
+			background: url('../i/sprites/star-rating.png') left bottom;
+		}
+	 span {
+		 &.star1 {
+			 left: 0;
+			 &:hover{
+				 width: 17px;
+			 }
+		 }
+		 &.star2 {
+			 left: 17px;
+			 &:hover{
+				 width: 34px;
+			 }
+		 }
+		 &.star3 {
+			 left: 34px;
+			 &:hover{
+				 width: 51px;
+			 }
+		 }
+		 &.star4 {
+			 left: 51px;
+			 &:hover{
+				 width: 68px;
+			 }
+		 }
+		 &.star5 {
+			 left: 68px;
+			 &:hover{
+				 width: 85px;
+			 }
+		 }
+	 }
+	}
+}
