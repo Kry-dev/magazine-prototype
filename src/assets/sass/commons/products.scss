@@ -1,0 +1,21 @@
+.products {
+	display: flex;
+	flex-direction: column;
+	&__list {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+	}
+	&__item {
+		width: 12rem;
+		border: 0;
+	}
+	.card-body {
+		padding: 0;
+	}
+	.card-footer {
+		padding: 0;
+		border: none;
+		background: none;
+	}
+}

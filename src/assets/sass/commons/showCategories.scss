@@ -1,5 +1,6 @@
 #showCategories {
 	padding: 20px 0;
+	border-radius: 0 5px 5px 5px;
 
 	@include border-primary;
 	.category__list {
