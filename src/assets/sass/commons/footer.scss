@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 70px;
+	min-height: $footer-min-height;
 	background: $primary;
 	color: white;
 	&__copyright{

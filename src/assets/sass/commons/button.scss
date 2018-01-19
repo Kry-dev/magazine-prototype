@@ -43,11 +43,8 @@ button,
 	}
 }
 .btn-arr-down {
-
 	font-size: 1.315rem;
-	//&:after{
 	display: flex;
-	//position: absolute;
 	align-self: center;
 	justify-self: flex-end;
 	margin-left: auto;
@@ -57,7 +54,6 @@ button,
 	right: 40px;
 	top: 15px;
 	background: url(../i/icons/arrow-down.png) no-repeat 0 0;
-//}
 	&:hover:after {
 		@include animation-base;
 	}
