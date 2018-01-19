@@ -1,6 +1,10 @@
+.header{
+	display: flex;
+	flex-direction: column;
+}
 .navbar {
 	display: flex;
-	padding: 0 50px;
+
 	&-brand {
 		display: flex;
 		width: 150px;

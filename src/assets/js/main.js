@@ -4,19 +4,14 @@
 //= ../../../node_modules/bootstrap/js/dist/tooltip.js
 //= ../../../node_modules/bootstrap/js/dist/dropdown.js
 //= ../../../node_modules/bootstrap/js/dist/collapse.js
-// = ../../../node_modules/bootstrap/js/dist/tab.js
-// = ../../../node_modules/slick-carousel/slick/slick.js
+//= ../../../node_modules/bootstrap/js/dist/tab.js
+//= ../../../node_modules/slick-carousel/slick/slick.js
 
 
 //= commons/tooltip.js
 //= commons/dropdown.js
 //= commons/collapse.js
-//= commons/gamburgerBtn.js
-//= commons/menuNav.js
-//= commons/videosCarousel.js
-//= commons/hideScroll.js
 
 $(document).ready(function() {
-    menuNavInit();
-    initVideoSlider();
+    initCollapse();
 });

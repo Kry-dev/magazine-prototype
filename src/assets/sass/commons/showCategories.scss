@@ -1,0 +1,23 @@
+#showCategories {
+	padding: 20px 0;
+
+	@include border-primary;
+	.category__list {
+		justify-content: flex-start;
+	}
+	.category__link {
+		border: none;
+		font-size: 0.6875rem;
+		padding: 0 25px;
+		span {
+			text-align: left;
+		}
+		&:before{
+			left: 3px;
+			top: 2px;
+		}
+		&:hover{
+			transform: scale(1);
+		}
+	}
+}

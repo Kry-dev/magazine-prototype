@@ -14,3 +14,6 @@
 @mixin primary-shadow {
 	box-shadow: -17px 17px 0px 0px $primary;
 }
+@mixin border-primary{
+	border: 1px solid $primary;
+}

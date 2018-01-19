@@ -1,8 +1,13 @@
-.wrapper{
+html,
+body {
+	height: 100%;
+}
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	font-family: $font-family-base;
+	height: auto;
 }
 
 ul,
@@ -79,13 +84,15 @@ strong{
 	text-align: center;
 }
 .topSection {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin-top: -53px;
 	padding-top: 53px;
+	margin-bottom: -69px;
+	padding-bottom: 69px;
 }
 section{
 	.section_header{

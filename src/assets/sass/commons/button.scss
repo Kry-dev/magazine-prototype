@@ -1,8 +1,8 @@
 button,
 .btn {
+	position: relative;
 	transform: scale(1);
 	text-transform: uppercase;
-	font-size: 1.315rem;
 	font-family: 'Montserrat-SemiBold';
 	&:hover,
 	&:active,
@@ -10,7 +10,7 @@ button,
 		cursor: pointer;
 		outline: none;
 		box-shadow: none;
-		transform: scale(1.2);
+		//transform: scale(1.1);
 	}
 }
 .btn-circle	{
@@ -23,13 +23,11 @@ button,
 	font-size: 1rem;
 	padding: 0;
 }
-.btn-arr-right{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.btn-arr-right {
 	align-items: center;
 	position: relative;
-	&:after{
+	font-size: 1.315rem;
+	&:after {
 		display: block;
 		position: absolute;
 		content: "";
@@ -39,8 +37,35 @@ button,
 		top: 20px;
 		background: url(../i/icons/arrow-right.png) no-repeat 0 0;
 	}
-	&:hover:after{
+	&:hover:after {
 		@include animation-base;
 		right: 20px;
 	}
+}
+.btn-arr-down {
+
+	font-size: 1.315rem;
+	//&:after{
+	display: flex;
+	//position: absolute;
+	align-self: center;
+	justify-self: flex-end;
+	margin-left: auto;
+	content: "";
+	width: 20px;
+	height: 17px;
+	right: 40px;
+	top: 15px;
+	background: url(../i/icons/arrow-down.png) no-repeat 0 0;
+//}
+	&:hover:after {
+		@include animation-base;
+	}
+}
+.show-category {
+	display: flex;
+	font-size: 1rem;
+	border-radius: 5px 5px 0 0;
+	text-align: left;
+	min-width: 200px;
 }
