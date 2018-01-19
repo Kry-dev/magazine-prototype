@@ -9,7 +9,10 @@
 	.category__link {
 		border: none;
 		font-size: 0.6875rem;
-		padding: 0 25px;
+		padding-left: 30px;
+		padding-right: 5px;
+		justify-content: flex-start;
+		text-align: left;
 		span {
 			text-align: left;
 		}
