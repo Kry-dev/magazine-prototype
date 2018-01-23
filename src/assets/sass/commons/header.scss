@@ -1,7 +1,7 @@
 .header{
 	display: flex;
 	flex-direction: column;
-	height: $header-min-height;
+	min-height: $header-min-height;
 }
 .navbar {
 	display: flex;

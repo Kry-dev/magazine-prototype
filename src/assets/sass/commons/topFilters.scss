@@ -1,0 +1,27 @@
+.topFilters {
+	display: flex;
+	margin-bottom: 1rem;
+	.card{
+		border: 1px solid $gray;
+		height: 100%;
+		padding: 1.25rem;
+		&-header{
+			background: transparent;
+			border-bottom: 1px solid $gray;
+			padding: 0;
+			margin-bottom: 1rem;
+		}
+		&-title{
+			font-size: 1.375rem;
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+		&-body{
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+	}
+}

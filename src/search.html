@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Useful meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <title>Magazine prototype</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-light bg-faded">
+                        <a class="navbar-brand" href="/">logo</a>
+                        <form class="navbar-form">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <button class="btn btn-circle btn-danger" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-default">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navmenu">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div class="rel-keywords d-flex">
+                        <h3 class="rel-keywords__title">Related keywords</h3>
+                        <ul class="rel-keywords__list form-control">
+                            <li><a href="#">Camera bag</a></li>
+                            <li><a href="#">Digital camera</a></li>
+                            <li><a href="#">Video camera</a></li>
+                            <li><a href="#">Nikon camera</a></li>
+                            <li><a href="#">Sony camera</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav aria-label="breadcrumb">
+        <div class="container-fluid">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cameras</li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="container-fluid ">
+            <section class="topFilters">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">All categories</h5>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="">Digital Camera</a>
+                                    <a href="#" class="">Home & Garden</a>
+                                    <a href="#" class="">Consumer & Electronics</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">All brands</h5>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="">Phillips</a>
+                                    <a href="#" class="">Canon</a>
+                                    <a href="#" class="">Sony</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">All types</h5>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="">3D</a>
+                                    <a href="#" class="">Children</a>
+                                    <a href="#" class="">Spy Miniature</a>
+                                    <a href="#" class="">Ultra Compact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">All series</h5>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="">AgFa Photo AP</a>
+                                    <a href="#" class="">Canon PIXUS</a>
+                                    <a href="#" class="">Fujifilm FinePix S Series</a>
+                                    <a href="#" class="">Leica C-LUX</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class=" dropDwFilters">
+                <div class="container-fluid">
+                    <ul class="row dropDwFilters__list">
+                        <li class="col dropDwFilters__item">
+                            <div class="dropdown">
+                                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col dropDwFilters__item">2</li>
+                        <li class="col dropDwFilters__item">3</li>
+                        <li class="col dropDwFilters__item">4</li>
+                        <li class="col dropDwFilters__item">5</li>
+                        <li class="col dropDwFilters__item">6</li>
+                        <li class="col dropDwFilters__item">7</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="products">
+                <ul class="products__list">
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="card product__item">
+                        <a href="#" class="card-body">
+                            <img class="card-img-top" src="/assets/i/products/product-img-01.jpg" alt="Card image cap">
+                            <h5 class="card-title">Card title</h5>
+                        </a>
+                        <div class="card-footer">
+                            <span class="products-price">$30.20</span>
+                            <p class="card-text">Quick example text.</p>
+                            <a href="#" class="btn btn-primary btn-circle">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">Copyright © pickclick. All Rights Reserved</div>
+        </div>
+    </footer>
+</div>
+
+<!-- JS -->
+<script src="assets/js/main.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
