@@ -4,3 +4,14 @@
 	border: $input-btn-border-width solid $input-border-color;
 	box-shadow: $input-box-shadow;
 }
+.pretty{
+	width: 100%;
+	&:hover,
+	&:focus,
+	&:active{
+		label{
+			color: $primary;
+		}
+	}
+}
+..form-cont
