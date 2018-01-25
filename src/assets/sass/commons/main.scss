@@ -8,4 +8,8 @@
 	margin-bottom: - $footer-min-height;
 	padding-top: $header-min-height;
 	padding-bottom: $footer-min-height;
+	@include media-breakpoint-down(sm){
+		padding-left: 0 ;
+		padding-right: 0;
+	}
 }
