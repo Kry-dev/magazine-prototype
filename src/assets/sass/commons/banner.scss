@@ -66,4 +66,67 @@
 		padding: 15px 40px;
 		margin: 0 auto;
 	}
+	@include media-breakpoint-down(lg){
+		padding: 0;
+		&__img-1{
+			left: 0;
+		}
+		&__title-box{
+			padding-top: 10%;
+			width: 50%;
+			align-self: flex-start;
+			align-items: stretch;
+			height: 100%;
+		}
+		&__img-2{
+			background-size: contain;
+			top: 55%;
+			right:-10%;
+			height: 60%;
+		}
+		.btn{
+			align-self: flex-end;
+		}
+	}
+	@include media-breakpoint-down(md){
+		&__img-2{
+			background-position: 0 0;
+			background-size: cover;
+			width: 65%;
+			top: 50%;
+			right: -20%;
+		}
+	}
+	@include media-breakpoint-down(sm){
+		&__img-1{
+			width: 30%;
+			height: 70%;
+			bottom: 0;
+			top: 30%;
+			left: 0;
+			background-size: cover;
+			background-position: bottom right;
+		}
+		&__title-box{
+			width: 100%;
+			position: absolute;
+			height: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		&__title {
+			flex: auto;
+		}
+		&__img-2{
+			right: 0;
+		}
+		.btn{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50% ,50%);
+		}
+	}
 }
