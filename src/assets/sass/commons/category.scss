@@ -61,6 +61,10 @@
 				transform: scale(1);
 			}
 		}
+		@include media-breakpoint-down(sm){
+			font-size: .6rem;
+			width: 150px;
+		}
 	}
 	&__link-2{
 		&:before{ background-position: -25px -1px;}

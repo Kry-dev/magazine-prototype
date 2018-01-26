@@ -64,4 +64,7 @@ button,
 	border-radius: 5px 5px 0 0;
 	text-align: left;
 	min-width: 190px;
+	@include media-breakpoint-down(xs){
+		width: 100%;
+	}
 }

@@ -54,6 +54,37 @@
 	grid-auto-rows: minmax(120px, auto);
 	grid-auto-flow: dense;
 	padding: 10px;
+	@include media-breakpoint-down(lg){
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		.card{
+			width: 20%;
+		}
+	}
+	@include media-breakpoint-down(md){
+
+		.card{
+			width: 30%;
+		}
+		.products__info{
+			display: flex;
+			width: 100%;
+			flex: auto;
+		}
+	}
+	@include media-breakpoint-down(sm){
+		.card{
+			width: 45%;
+		}
+		.card-title{
+			font-size: 1.5rem;
+		}
+		.card-text{
+			font-size: .8rem;
+			text-align: center;
+		}
+	}
 }
 .products__item {
 	padding: 1rem;
@@ -61,8 +92,19 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 5px;
+	@include media-breakpoint-down(md){
+		width: 50%;
+	}
 }
 .products__info {
-	grid-area: 1 / 6 / 3 / 8;
+	grid-area: 1 / 5/ 3 / 8;
 	@include box-shadow;
+	@include media-breakpoint-down(lg){
+		grid-area: 1 / 5/ 3 / 8;
+	}
+	@include media-breakpoint-down(md){
+		display: flex;
+		width: 100%;
+		grid-area: none;
+	}
 }
