@@ -6,6 +6,7 @@
 	background: url("../i/banner/banner-bg-01.png") no-repeat center 0;
 	padding: 0 50px;
 	overflow: hidden;
+	z-index: 100;
 	&:after{
 		content: "";
 		position: absolute;
@@ -127,6 +128,7 @@
 			bottom: 0;
 			left: 50%;
 			transform: translate(-50% ,50%);
+			z-index: 100;
 		}
 	}
 }

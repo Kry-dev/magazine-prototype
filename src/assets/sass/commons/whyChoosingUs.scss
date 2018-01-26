@@ -27,5 +27,13 @@
 			height: 100%;
 			@include primary-shadow;
 		}
+		@include media-breakpoint-down(sm){
+			width: 100%;
+		}
+	}
+	.container{
+		@include media-breakpoint-down(sm){
+			max-width: 100%;
+		}
 	}
 }

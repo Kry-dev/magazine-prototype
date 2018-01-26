@@ -7,14 +7,26 @@
 		width: 100%;
 		justify-content: flex-start;
 		position: relative;
+		@include media-breakpoint-down(sm){
+			margin-bottom: 2rem;
+		}
 		img {
 			width: 100%;
 			max-width: 445px;
+			display: block;
 			@include img-shadow;
+			@include media-breakpoint-down(md){
+				height: 100%;
+				width: 100%;
+				max-width: 100%;
+				&:after{
+					left: 80%;
+				}
+			}
 		}
 		&:after {
 			position: absolute;
-			right: 80px;
+			left: 415px;
 			top: -30px;
 			content: "";
 			display: flex;
@@ -23,6 +35,14 @@
 			border-radius: 50%;
 			@include img-shadow;
 			background: #fff url("../i/sprites/icons-sprite.png") no-repeat;
+			@include media-breakpoint-down(md){
+				left: 90%;
+			}
+			@include media-breakpoint-down(sm){
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
 		}
 		&.step-1:after{ background-position: 0 -65px;  }
 		&.step-2:after{	background-position: -65px -65px;  }
@@ -33,6 +53,9 @@
 		font-size: 1rem;
 		font-family: 'Montserrat-Bold';
 		margin-bottom: 1rem;
+		@include media-breakpoint-down(sm){
+			text-align: center;
+		}
 	}
 	&__article {
 		display: flex;
@@ -40,12 +63,20 @@
 		flex-direction: row;
 		padding-bottom: 250px;
 		position: relative;
-		&.flex-row-reverse{
+		& .flex-row-reverse{
 			.HowItWorks__article_img{
 				justify-content: flex-end;
 				&:after{
-					left: 80px;
+					right: 400px;
+					left: 0;
+					@include media-breakpoint-down(sm){
+						right: 50%;
+						transform: translateX(50%);
+						left: auto;
+					}
 				}
+			}
+			@include media-breakpoint-down(sm){
 			}
 		}
 		&:after {
@@ -60,6 +91,7 @@
 			height: 220px;
 			background: url("../i/curves/curve-01.png") no-repeat center;
 
+
 		}
 		&:nth-child(2):after{
 			background: url("../i/curves/curve-01.png") no-repeat center;
@@ -71,10 +103,28 @@
 				display: none;
 			}
 		}
-
+		@include media-breakpoint-down(sm){
+			padding-bottom: 2rem;
+			&:after{
+				display: none;
+			}
+		}
 	}
 
 	h2 {
 		color: $gray;
+	}
+
+	@include media-breakpoint-down(sm){
+		padding: 2rem 0;
+		position: relative;
+		z-index: 10;
+		.container{
+			width: 100%;
+			max-width: 100%;
+		}
+		&__article_descr{
+			text-align: center;
+		}
 	}
 }
