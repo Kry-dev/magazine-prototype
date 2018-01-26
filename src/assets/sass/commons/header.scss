@@ -25,6 +25,7 @@
 		}
 		@include media-breakpoint-down(xs){
 			width: 50px;
+			flex:  none;
 		}
 	}
 	&-form {
@@ -51,7 +52,7 @@
 			width: 60%;
 		}
 		@include media-breakpoint-down(xs){
-			width: 50%;
+			width: 60%;
 		}
 	}
 	.btn-group {

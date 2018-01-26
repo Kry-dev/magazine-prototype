@@ -99,6 +99,7 @@
 		}
 	}
 	@include media-breakpoint-down(sm){
+		overflow: visible;
 		&__img-1{
 			width: 30%;
 			height: 70%;
@@ -122,6 +123,7 @@
 		}
 		&__img-2{
 			right: 0;
+			height: 50%;
 		}
 		.btn{
 			position: absolute;
