@@ -1,6 +1,6 @@
-$numDots:10;
+$numDots:11;
 $diameter:100px;
-$dotDiameter:10px;
+$dotDiameter:12px;
 $dotColor:#c8321e;
 $rotateAngle: 360 / $numDots;
 
@@ -29,6 +29,7 @@ $rotateAngle: 360 / $numDots;
 	box-sizing:border-box;
 	position:absolute;
 	left:($diameter / 2) - ($dotDiameter / 2);
+	opacity: 1;
 }
 .dot:before {
 	content:"";
@@ -39,6 +40,7 @@ $rotateAngle: 360 / $numDots;
 	background:$dotColor;
 	box-sizing:border-box;
 	margin-top:-($dotDiameter / 2);
+	opacity: .5;
 	animation: before 2s ease-in infinite;
 }
 @for $i from 1 through $numDots {

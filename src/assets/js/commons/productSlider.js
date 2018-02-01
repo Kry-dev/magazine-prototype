@@ -1,7 +1,7 @@
 $('.productSlider__list').slick({
-    centerMode: true,
     centerPadding: '40px',
     slidesToShow: 4,
+    focusOnSelect: true,
     responsive: [
         {
             breakpoint: 768,
