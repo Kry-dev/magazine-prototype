@@ -1,13 +1,25 @@
 .productSlider{
+	position: relative;
 	display: flex;
 	width: 100%;
 	overflow: hidden;
 	@include box-shadow;
 	&__list{
 		width: 90%;
-		height: 290px;
-		padding: 5px 0;
+		height: 275px;
 		margin: 0 auto;
+	}
+	&__btn{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 5px 30px;
+		text-align: right;
+		text-transform: uppercase;
+		font-weight: bold;
+		.fa{
+			padding-left: 15px;
+		}
 	}
 	img{
 		width: 100%;
@@ -45,4 +57,5 @@
 			content: $fa-var-chevron-right;
 		}
 	}
+
 }

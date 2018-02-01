@@ -1,7 +1,7 @@
 //
 // Color system
 //
-$blue: #5a9baf;
+$blue: #0096d6;
 $indigo:  #6610f2;
 $pink:    #e83e8c ;
 $purple: #a56478;
@@ -48,7 +48,7 @@ $colors: map-merge((
 $primary:       $red;
 $secondary:     $gray-600;
 $success:       $green;
-$info:          $cyan;
+$info:          $blue;
 $warning:       $yellow;
 $danger:        $primary;
 $light:         $gray-100;
