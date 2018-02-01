@@ -12,6 +12,12 @@ button,
 		box-shadow: none;
 		//transform: scale(1.1);
 	}
+	&-secondary{
+		text-transform: none;
+		background-color: #cdcdcd;
+		color: #515151;
+		border: transparent;
+	}
 }
 .btn-circle	{
 	display: flex;

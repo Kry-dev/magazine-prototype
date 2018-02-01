@@ -1,0 +1,40 @@
+.bids{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	&__col {
+		display: flex;
+		width: 50%;
+	}
+	&__price {
+		color: $primary;
+		font-family: 'Montserrat-Bold';
+		font-size: 1.25rem;
+		align-self: center;
+		span {
+			padding: 0 5px;
+		}
+	}
+	&__counter {
+		display: flex;
+		color: $dark;
+		border: 1px solid $dark;
+		font-size: 1rem;
+		padding: 5px 10px;
+		border-radius: 1rem;
+		margin-right: 1rem;
+		span {
+			padding: 0 5px;
+		}
+	}
+	&__time{
+		color: $primary;
+		font-family: 'Montserrat';
+		font-size: 1rem;
+		align-self: center;
+		span {
+			padding: 0 5px;
+		}
+	}
+}

@@ -3,6 +3,7 @@
 	display: flex;
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 2rem;
 	@include box-shadow;
 	&__list{
 		width: 90%;
