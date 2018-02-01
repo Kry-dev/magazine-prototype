@@ -12,7 +12,9 @@
 //= commons/dropdown.js
 //= commons/collapse.js
 //= commons/productSlider.js
+//= commons/loading.js
 
 $(document).ready(function() {
     initCollapse();
+    // loadingInit();
 });

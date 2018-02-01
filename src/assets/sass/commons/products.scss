@@ -2,6 +2,7 @@
 .products {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	.card {
 		margin-bottom: 0.625rem;
 		border: 0;
