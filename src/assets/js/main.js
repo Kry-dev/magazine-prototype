@@ -11,6 +11,7 @@
 //= commons/tooltip.js
 //= commons/dropdown.js
 //= commons/collapse.js
+//= commons/productSlider.js
 
 $(document).ready(function() {
     initCollapse();

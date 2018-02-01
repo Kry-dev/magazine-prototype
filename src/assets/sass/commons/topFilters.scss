@@ -16,6 +16,8 @@
 			border: none;
 			flex-direction: column;
 			justify-content: flex-start;
+			width: 100%;
+			flex-wrap: wrap;
 
 		}
 		&-header{
@@ -52,12 +54,15 @@
 			@include media-breakpoint-down(sm){
 				flex-direction: row;
 				justify-content: flex-start;
+				flex-wrap: wrap;
 				a{
 					margin-right: .4rem;
+					margin-bottom: .4rem;
 					text-decoration: none;
 					border: 1px solid $gray;
-					border-radius: 1.5rem;
-					padding: .5rem 1rem;
+					border-radius: 1rem;
+					padding: .5rem;
+					align-self: center;
 				}
 			}
 		}

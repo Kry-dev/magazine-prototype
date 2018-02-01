@@ -97,7 +97,7 @@
 	}
 }
 .products__info {
-	grid-area: 1 / 5/ 3 / 8;
+	grid-area: 1 / 7/ 3 / 9;
 	@include box-shadow;
 	@include media-breakpoint-down(lg){
 		grid-area: 1 / 5/ 3 / 8;
