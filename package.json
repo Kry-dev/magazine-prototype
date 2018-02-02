@@ -1,7 +1,7 @@
 {
   "name": "yes",
   "version": "1.0.0",
-  "description": "Magazite- Bootstrap 4",
+  "description": "Magazine - Bootstrap 4",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
