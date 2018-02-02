@@ -103,10 +103,17 @@
 				display: none;
 			}
 		}
+		.category__list-item{
+			display: none;
+		}
 		@include media-breakpoint-down(sm){
 			padding-bottom: 2rem;
 			&:after{
 				display: none;
+			}
+			.category__list-item{
+				display: block;
+				margin: 0 auto;
 			}
 		}
 	}
