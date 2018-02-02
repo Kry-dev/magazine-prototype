@@ -1,0 +1,78 @@
+.statistics{
+	display: flex;
+	width: 100%;
+	margin-bottom: 2rem;
+	h6{
+		font-family: 'Montserrat-Bold';
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+	.progress{
+		width: 80%;
+		padding: .25rem;
+		border-radius: .25rem	;
+		position: relative;
+		overflow: inherit;
+		&-min,
+		&-max{
+			position: absolute;
+			top: -20px;
+			color: #737373;
+			opacity: .7;
+		}
+		&-min{
+			left: 0;
+		}
+		&-max{
+			right: 0;
+		}
+		&-bar{
+			border-radius: .5rem;
+		}
+	}
+	&__range{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		&-icon{
+			display: flex;
+			width: 30px;
+			height: 30px;
+			background: #e9ecef;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			.fa{
+				color: $white;
+			}
+		}
+		&-value{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 20px;
+			width: 60px;
+			padding: 5px 15px;
+			background: $primary;
+			color: $white;
+			font-size: .8rem;
+			border-radius: 2px;
+			font-family: 'Montserrat-Bold';
+			&:before{
+				position: absolute;
+				content: "";
+				width: 5px;
+				height: 5px;
+				background: $primary;
+				left: -3px;
+				top: 8px;
+				transform: rotate(45deg);
+			}
+		}
+	}
+
+}

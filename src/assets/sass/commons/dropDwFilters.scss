@@ -1,6 +1,7 @@
 .dropDwFilters{
 	display: flex;
 	width: 100%;
+	flex-direction: column;
 	&__list{
 		width: 100%;
 		display: flex;
