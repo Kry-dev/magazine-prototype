@@ -154,3 +154,9 @@ section{
 		}
 	}
 }
+.container-fluid{
+	@include media-breakpoint-down(sm){
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+}
