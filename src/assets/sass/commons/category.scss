@@ -10,8 +10,33 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+
 		@include media-breakpoint-down(md){
 			justify-content: center;
+		}
+	}
+	&__list-show-sm{
+		display: none;
+		@include media-breakpoint-down(sm){
+			display: flex;
+		}
+		.category__list{
+			margin: 2rem auto;
+		}
+	}
+	&__list-hidden-sm{
+		display: flex;
+		@include media-breakpoint-down(sm){
+			display: none;
+		}
+	}
+	&__list-item{
+		@include media-breakpoint-down(sm){
+			width: 48%;
+			a{
+				width: 100%;
+				margin: 5px auto;
+			}
 		}
 	}
 	&__link{
@@ -26,8 +51,9 @@
 		justify-content: center;
 		text-transform: uppercase;
 		margin-bottom: 5px;
+		font-family: 'Montserrat-Bold';
 		padding: 0 30px;
-		line-height: 0.9;
+		line-height: 1;
 		background: $white;
 		font-size: 0.625rem;
 		overflow: hidden;
