@@ -12,9 +12,10 @@
 //= commons/dropdown.js
 //= commons/collapse.js
 //= commons/productSlider.js
+//= commons/scrollTop.js
 //= commons/loading.js
 
 $(document).ready(function() {
     initCollapse();
-    // loadingInit();
+    window.onscroll = function() {scrollFunction()};
 });

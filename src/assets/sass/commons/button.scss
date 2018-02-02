@@ -74,3 +74,23 @@ button,
 		width: 100%;
 	}
 }
+#scrollTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 0;
+	z-index: 1200;
+	border: none;
+	outline: none;
+	background-color: $primary;
+	color: white;
+	cursor: pointer;
+	padding: 8px 15px;
+	text-transform: none;
+	.fa{
+		margin-right: 1rem;
+	}
+	&:hover {
+		background-color: darken($primary, 10%);
+	}
+}
