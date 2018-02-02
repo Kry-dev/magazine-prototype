@@ -13,7 +13,7 @@
 		text-transform: uppercase;
 		font-size: 1.25rem;
 		color: $black;
-		width: 178px;
+		width: 238px;
 		margin-bottom: 0;
 		@include media-breakpoint-down(md){
 			width: 30%;
@@ -41,7 +41,7 @@
 				font-size: 12px;
 			}
 		}
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(lg){
 			width: 100%;
 			font-size: 12px;
 			border: none;
