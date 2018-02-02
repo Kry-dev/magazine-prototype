@@ -76,6 +76,13 @@
 				padding-left: 3px;
 			}
 		}
-		
+	}
+	@include media-breakpoint-down(xs){
+		.product__descr-title{
+			font-size: .8rem;
+		}
+		ul.product__descr-list{
+			column-count: 1;
+		}
 	}
 }

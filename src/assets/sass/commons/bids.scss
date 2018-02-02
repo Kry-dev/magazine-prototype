@@ -42,4 +42,14 @@
 			width: 100% !important;
 		}
 	}
+	@include media-breakpoint-down(xs){
+		&__price {
+			font-size: 1rem;
+		}
+		&__counter {
+			font-size: .8rem;
+			padding: 5px;
+			margin-right: 5px;
+		}
+	}
 }

@@ -80,5 +80,12 @@
 			right: 0;
 		}
 	}
+	@include media-breakpoint-down(xs){
+		box-shadow: none;
+		max-height: 230px;
+		.productSlider .slick-prev{
+			left: -5px;
+		}
+	}
 
 }
