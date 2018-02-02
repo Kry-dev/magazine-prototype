@@ -3,4 +3,50 @@
 	flex-direction: row;
 	width: 100%;
 	margin-bottom: 2rem;
+	.product__descr{
+		display: flex;
+		border: 2px solid $black;
+		padding: 10px;
+	}
+	ul.product__descr-list{
+		width: 100%;
+		list-style-position: inside;
+		-moz-column-count: 2; /* Firefox */
+		-webkit-column-count: 2; /* Safari and Chrome */
+		column-count: 2;
+		list-style-type: decimal;
+	}
+	.product__descr-item{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1rem;
+		span{
+			color: #333333;
+			font-size: 1rem;
+			line-height: 25px;
+		}
+	}
+	.product__descr-title{
+		display: flex;
+		font-family: 'Montserrat-Bold';
+		font-size: 1rem;
+		line-height: 25px;
+		padding: 0 1rem 0 2rem;
+		margin-bottom: 0;
+		position: relative;
+		&:before {
+			position: absolute;
+			display: block;
+			content: "";
+			width: 25px;
+			height: 25px;
+			left: 0;
+			background: url("../i/sprites/product-sprite.png") no-repeat 0 0;
+		}
+		&.location:before{background-position: -25px 0;}
+		&.seller:before{background-position: -50px 0;}
+		&.payment:before{background-position: -75px 0;}
+		&.shipping:before{background-position: -100px 0;}
+		&.view:before{background-position: -125px 0;}
+	}
 }
