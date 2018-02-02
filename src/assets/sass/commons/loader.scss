@@ -20,7 +20,8 @@ $rotateAngle: 360 / $numDots;
 	box-sizing:border-box;
 	position:absolute;
 	top: 20px;
-	left: 40%;
+	left: 50%;
+	margin-left: -50px;
 	animation: loader 40s linear infinite;
 }
 .dot {

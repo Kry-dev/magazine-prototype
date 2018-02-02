@@ -9,4 +9,10 @@
 			color: $primary;
 		}
 	}
+	@include media-breakpoint-down(sm){
+		background: #f9f9f9;
+		.breadcrumb-item a{
+			text-transform: uppercase;
+		}
+	}
 }
