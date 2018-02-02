@@ -79,8 +79,6 @@
 			span{
 				z-index: 100;
 			}
-
-			@include animation-scale;
 			&:before{
 				background-color: $danger ;
 				background-position: 0 -25px;
