@@ -1,3 +1,22 @@
+.btn-filter{
+	display: none;
+	text-transform: none;
+	@include media-breakpoint-down(sm){
+		display: flex;
+	}
+}
+.showFilter-sm{
+	@include media-breakpoint-down(sm){
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+		.titleBlackLine{
+			margin-bottom: 0;
+		}
+	}
+}
 #showFilter{
 	.close,
 	.reset{
@@ -22,6 +41,10 @@
 	}
 	.modal-body{
 		padding: 0;
+		.input-radio,
+		.input-checkbox{
+			padding: .5rem 0;
+		}
 	}
 	.dropDwFilters{
 		display: flex;
@@ -58,10 +81,6 @@
 				transform: rotate(0deg);
 			}
 		}
-
-		.input-radio{
-			padding: .375rem .75rem;
-		}
 	}
 	.dropDwFilters__item{
 		margin-bottom: 0;
@@ -74,18 +93,18 @@
 		margin-right: 0;
 		margin-right: 1rem;
 		input{
-			right: 10px;
+			right: 8px;
 			left: auto;
 		}
 	}
 	.pretty .state label:after,
 	.pretty .state label:before{
-		right: 10px !important;
+		right: 8px !important;
 		left: auto;
 	}
 	.pretty.p-icon .state .icon{
 		left: auto;
-		right: 10px;
+		right: 8px;
 	}
 
 }

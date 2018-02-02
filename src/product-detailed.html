@@ -127,7 +127,7 @@
                 </div>
             </section>
             <section class="statistics mb-3">
-                <div class="container-fluid">
+                <div class="container-fluid ">
                     <div class="titleBlackLine">
                         <h5 class="w-20">Statistics</h5>
                         <div class="blackline"></div>
@@ -198,24 +198,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container-fluid showFilter-sm">
+                        <div class="titleBlackLine">
+                            <h5 class="w-20">You will also like</h5>
+                            <div class="blackline"></div>
+                        </div>
+                        <button type="button" class="btn btn-danger btn-filter" data-toggle="modal" data-target="#showFilter">
+                            filter
+                        </button>
+                    </div>
+
+
                 </div>
                 
             </section>
-            <section>
-                <div class="container-fluid">
-
-                    <button type="button" class="btn btn-danger d-none" data-toggle="modal" data-target="#exampleModal">
-                        filter
-                    </button>
-                </div>
-            </section>
             <section class="dropDwFilters " >
                 <div class="container-fluid">
-                    <div class="titleBlackLine">
-                        <h5 class="w-20">You will also like</h5>
-                        <div class="blackline"></div>
-
-                    </div>
                     <ul class="dropDwFilters__list">
                         <li class="col dropDwFilters__item">
                             <div class="dropdown">
@@ -375,8 +373,6 @@
                         </li>
                     </ul>
                 </div>
-
-
             </section>
             <section class="products">
                 <ul class="products__list">
@@ -646,6 +642,223 @@
         </div>
     </footer>
     <button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fa fa-arrow-up"></i> Back to top </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="showFilter" tabindex="-1" role="dialog" aria-labelledby="showFilter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                    <div class="link-group">
+                        <button type="reset" class="reset">Clear all</button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <section class="dropDwFilters" >
+                        <ul class="dropDwFilters__list">
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseListing" aria-expanded="false" aria-controls="collapseListing">
+                                    Listing
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseListing">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <input type="radio" name="listing" id="listing-01" />
+                                            <div class="state p-danger">
+                                                <label for="listing-01">listing-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <input type="radio" name="listing" id="listing-02" />
+                                            <div class="state p-danger">
+                                                <label for="listing-02">listing-02</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <input type="radio" name="listing" id="listing-03" />
+                                            <div class="state p-danger">
+                                                <label for="listing-03">listing-03</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <input type="radio" name="listing" id="listing-04" />
+                                            <div class="state p-danger">
+                                                <label for="listing-04">listing-04</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseBrand" aria-expanded="false"
+                                        aria-controls="collapseBrand">
+                                    Brand
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseBrand">
+                                    <div class="input-checkbox">
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="brand-01" name="brand">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="brand-01">Brand-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="brand-02" name="brand">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="brand-02">Brand-02</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="brand-03" name="brand">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="brand-03">Brand-03</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="brand-04" name="brand">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="brand-04">Brand-04</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseColor" aria-expanded="false"
+                                        aria-controls="collapseColor">
+                                    Color
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseColor">
+                                    <div class="input-checkbox">
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="Color-01" name="Color">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="Color-01">Color-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="Color-02" name="Color">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="Color-02">Color-02</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseCondit" aria-expanded="false"
+                                        aria-controls="collapseCondit">
+                                    Condition
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseCondit">
+                                    <div class="input-checkbox">
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="condition-01" name="condition">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="condition-01">Condition-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="condition-02" name="condition">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="condition-02">Condition-02</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="condition-03" name="condition">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="condition-03">Condition-03</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="condition-04" name="condition">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="condition-04">Condition-04</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseSort" aria-expanded="false"
+                                        aria-controls="collapseSort">
+                                    Sort
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseSort">
+                                    <div class="input-checkbox">
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="sort-01" name="sort">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="sort-01">Sort-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="sort-02" name="sort">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="sort-02">Sort-02</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseLocation"
+                                        aria-expanded="false"
+                                        aria-controls="collapseLocation">
+                                    Location
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseLocation">
+                                    <div class="input-checkbox">
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="location-01" name="location">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="loaction-01">Location-01</label>
+                                            </div>
+                                        </div>
+                                        <div class="pretty p-icon p-curve p-smooth">
+                                            <input type="checkbox" id="location-02" name="location">
+                                            <div class="state p-danger">
+                                                <i class="icon fa fa-check"></i>
+                                                <label for="loaction-02">Location-02</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" type="submit" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <!-- JS -->
