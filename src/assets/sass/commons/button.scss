@@ -93,4 +93,10 @@ button,
 	&:hover {
 		background-color: darken($primary, 10%);
 	}
+	@include media-breakpoint-down(sm){
+		width: 80px;
+		.fa{
+			margin-right: 0;
+		}
+	}
 }

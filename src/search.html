@@ -128,8 +128,11 @@
             </section>
             <section>
                 <div class="container-fluid">
-                    <h1>Camera Products</h1>
-                    <button type="button" class="btn btn-danger d-none" data-toggle="modal" data-target="#exampleModal">
+                    <div class="titleBlackLine">
+                        <h5 class="w-20">Camera products</h5>
+                        <div class="blackline"></div>
+                    </div>
+                    <button type="button" class="btn btn-danger btn-filter" data-toggle="modal" data-target="#showFilter">
                         filter
                     </button>
                 </div>
@@ -605,6 +608,28 @@
         </div>
     </footer>
     <button onclick="topFunction()" id="scrollTop" title="Go to top"><i class="fa fa-arrow-up"></i> Back to top </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="showFilter" tabindex="-1" role="dialog" aria-labelledby="showFilter" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- JS -->
