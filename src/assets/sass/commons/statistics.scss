@@ -74,5 +74,22 @@
 			}
 		}
 	}
-
+	@include media-breakpoint-down(sm){
+		.statistics__range{
+			flex-direction: column;
+		}
+		.statistics__range-icon{
+			display: none;
+		}
+		.progress{
+			width: 100%;
+		}
+		.statistics__range-value{
+			color: $primary;
+			background: none;
+			&:before{
+				display: none;
+			}
+		}
+	}
 }

@@ -3,6 +3,14 @@
 	margin-bottom: 1rem;
 	@include media-breakpoint-down(sm){
 		margin-top: -1rem;
+		.btn-danger{
+			width: 100%;
+			margin: 0 auto 1rem;
+		}
+		.btn-secondary{
+			width: 49%;
+			margin: 0 auto 1rem;
+		}
 	}
 	.card{
 		border: 1px solid $gray;

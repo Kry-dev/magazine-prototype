@@ -58,5 +58,27 @@
 			content: $fa-var-chevron-right;
 		}
 	}
+	@include media-breakpoint-down(sm){
+		&__list{
+			width: 100%;
+		}
+		.productSlider__btn{
+			display: none;
+		}
+		.slick-slide.slick-current{
+			transform: scale(1);
+			border: none;
+		}
+		.slick-next:before,
+		.slick-prev:before{
+			color: $primary ;
+		}
+		.slick-prev{
+			left: 0;
+		}
+		.slick-next{
+			right: 0;
+		}
+	}
 
 }

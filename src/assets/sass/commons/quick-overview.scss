@@ -49,4 +49,33 @@
 		&.shipping:before{background-position: -100px 0;}
 		&.view:before{background-position: -125px 0;}
 	}
+	@include media-breakpoint-down(sm){
+		.product__descr{
+			border: none;
+		}
+		.product__descr-list{
+			background: #f9f9f9;
+			padding: 5px;
+		}
+		.product__descr-title{
+			padding: 0;
+			line-height: 1rem;
+			&:before{
+				display: none;
+			}
+		}
+		.product__descr-item{
+			display: flex;
+			flex-direction: row;
+			margin-bottom: .8rem;
+			line-height: 1rem;
+			span{
+				color: #333333;
+				font-size: .8rem;
+				line-height: 1rem;
+				padding-left: 3px;
+			}
+		}
+		
+	}
 }
