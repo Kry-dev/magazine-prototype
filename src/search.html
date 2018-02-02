@@ -615,17 +615,173 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Filter</h5>
+                    <div class="link-group">
+                        <button type="reset" class="reset">Clear all</button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                    </div>
+
                 </div>
                 <div class="modal-body">
-                    ...
+                    <section class="dropDwFilters" >
+                        <ul class="dropDwFilters__list">
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseListing" aria-expanded="false" aria-controls="collapseListing">
+                                    Listing
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseListing">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="listing-01">listing-01</label>
+                                            </div>
+                                            <input type="radio" name="listing" id="listing-01" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="listing-02">listing-02</label>
+                                            </div>
+                                            <input type="radio" name="listing" id="listing-02" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="listing-03">listing-03</label>
+                                            </div>
+                                            <input type="radio" name="listing" id="listing-03" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="listing-04">listing-04</label>
+                                            </div>
+                                            <input type="radio" name="listing" id="listing-04" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseBrand" aria-expanded="false"
+                                        aria-controls="collapseBrand">
+                                    Brand
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseBrand">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Brand-01">Brand-01</label>
+                                            </div>
+                                            <input type="radio" name="Brand" id="Brand-01" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Brand-02">Brand-02</label>
+                                            </div>
+                                            <input type="radio" name="Brand" id="Brand-02" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Brand-03">Brand-03</label>
+                                            </div>
+                                            <input type="radio" name="Brand" id="Brand-03" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseColor" aria-expanded="false"
+                                        aria-controls="collapseColor">
+                                    Color
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseColor">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="color-01">color-01</label>
+                                            </div>
+                                            <input type="radio" name="color" id="color-01" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="color-02">color-02</label>
+                                            </div>
+                                            <input type="radio" name="color" id="color-02" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="color-03">color-03</label>
+                                            </div>
+                                            <input type="radio" name="color" id="color-03" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseCondit" aria-expanded="false"
+                                        aria-controls="collapseCondit">
+                                    Condition
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseCondit">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="condition-01">condition-01</label>
+                                            </div>
+                                            <input type="radio" name="condition" id="condition-01" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="condition-02">condition-02</label>
+                                            </div>
+                                            <input type="radio" name="condition" id="condition-02" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="condition-03">condition-03</label>
+                                            </div>
+                                            <input type="radio" name="condition" id="condition-03" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropDwFilters__item">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseSort" aria-expanded="false"
+                                        aria-controls="collapseSort">
+                                    Sort
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                                <div class="collapse" id="collapseSort">
+                                    <div class="input-radio">
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Sort-01">Sort-01</label>
+                                            </div>
+                                            <input type="radio" name="Sort" id="Sort-01" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Sort-02">Sort-02</label>
+                                            </div>
+                                            <input type="radio" name="Sort" id="Sort-02" />
+                                        </div>
+                                        <div class="pretty p-default p-curve p-smooth">
+                                            <div class="state p-danger">
+                                                <label for="Sort-03">Sort-03</label>
+                                            </div>
+                                            <input type="radio" name="Sort" id="Sort-03" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" type="submit" class="btn btn-primary">Apply</button>
                 </div>
             </div>
         </div>
